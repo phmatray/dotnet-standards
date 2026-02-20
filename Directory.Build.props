@@ -1,0 +1,59 @@
+<Project>
+  <!-- Matray .NET Ecosystem — Common Build Properties -->
+  
+  <PropertyGroup Label="Language & Framework">
+    <!-- Default to .NET 10, but allow override per project -->
+    <TargetFramework Condition="'$(TargetFramework)' == ''">net10.0</TargetFramework>
+    <LangVersion>14</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Code Quality">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <NoWarn>$(NoWarn);CS1591</NoWarn> <!-- XML doc comments -->
+  </PropertyGroup>
+
+  <PropertyGroup Label="Deterministic Builds">
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true' Or '$(TF_BUILD)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Package Metadata">
+    <Authors>Philippe Matray</Authors>
+    <Company>Atypical Consulting SRL</Company>
+    <Copyright>Copyright © $(Company) $([System.DateTime]::Now.Year)</Copyright>
+    <PackageProjectUrl>https://github.com/phmatray/$(MSBuildProjectName)</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/phmatray/$(MSBuildProjectName)</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>dotnet;csharp;matray-ecosystem</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Source Link">
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <PropertyGroup Label="MinVer Versioning">
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <MinVerSkip Condition="'$(Configuration)' == 'Debug' or '$(Version)' != ''">true</MinVerSkip>
+  </PropertyGroup>
+
+  <ItemGroup Label="Common Package References">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+    <PackageReference Include="MinVer" Version="6.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup Label="Package README">
+    <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="\" Condition="Exists('$(MSBuildThisFileDirectory)README.md')"/>
+  </ItemGroup>
+
+</Project>

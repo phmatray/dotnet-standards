@@ -1,0 +1,8 @@
+<Project>
+  <!-- Matray .NET Ecosystem — Common Build Targets -->
+
+  <Target Name="ShowMinVerVersion" BeforeTargets="Build">
+    <Message Text="Building $(MSBuildProjectName) version $(MinVerVersion)" Importance="high" Condition="'$(MinVerVersion)' != ''" />
+  </Target>
+
+</Project>

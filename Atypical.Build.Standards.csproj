@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.Build.NoTargets/3.7.0">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageId>Atypical.Build.Standards</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Philippe Matray</Authors>
+    <Company>Atypical Consulting SRL</Company>
+    <Description>Common build standards and EditorConfig for the Matray .NET Ecosystem. Includes .editorconfig, Directory.Build.props, and Directory.Build.targets for consistent C# 14 / .NET 10 development.</Description>
+    <Copyright>Copyright © Atypical Consulting SRL 2026</Copyright>
+    <PackageProjectUrl>https://github.com/phmatray/dotnet-standards</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/phmatray/dotnet-standards</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>dotnet;csharp;editorconfig;build-standards;matray-ecosystem;standards;code-style;conventions</PackageTags>
+    <PackageReleaseNotes>Initial release (v1.0.0) of Matray .NET Ecosystem build standards.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoWarn>$(NoWarn);NU5128</NoWarn> <!-- No dependencies warning -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include=".editorconfig" Pack="true" PackagePath="contentFiles/any/any/.editorconfig" />
+    <None Include=".editorconfig" Pack="true" PackagePath="content/.editorconfig" />
+    <None Include="Directory.Build.props" Pack="true" PackagePath="contentFiles/any/any/Directory.Build.props" />
+    <None Include="Directory.Build.props" Pack="true" PackagePath="content/Directory.Build.props" />
+    <None Include="Directory.Build.targets" Pack="true" PackagePath="contentFiles/any/any/Directory.Build.targets" />
+    <None Include="Directory.Build.targets" Pack="true" PackagePath="content/Directory.Build.targets" />
+    <None Include="global.json" Pack="true" PackagePath="contentFiles/any/any/global.json" />
+    <None Include="global.json" Pack="true" PackagePath="content/global.json" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
