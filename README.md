@@ -16,6 +16,28 @@
 [![Last commit](https://img.shields.io/github/last-commit/phmatray/dotnet-standards)](https://github.com/phmatray/dotnet-standards/commits)
 <!-- portfolio-badges:end -->
 
+<!-- portfolio-toc:start -->
+
+## Table of Contents
+
+- [🎯 Purpose](#-purpose)
+- [📦 Distribution](#-distribution)
+- [🚀 Quick Start](#-quick-start)
+- [📋 What's Included](#-whats-included)
+- [🔧 Standards Overview](#-standards-overview)
+- [📚 Adoption Guide](#-adoption-guide)
+- [🎨 Customization Per Repo](#-customization-per-repo)
+- [🧪 Testing Standards in Isolation](#-testing-standards-in-isolation)
+- [📊 Rollout Phases](#-rollout-phases)
+- [🛠️ Troubleshooting](#-troubleshooting)
+- [📖 References](#-references)
+- [Tech Stack](#tech-stack)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+<!-- portfolio-toc:end -->
+
+
 
 **Common build standards and EditorConfig for the Matray .NET Ecosystem**
 
