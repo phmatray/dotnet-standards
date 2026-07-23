@@ -1,3 +1,5 @@
+![dotnet-standards banner](.github/banner.png)
+
 # .NET Standards — Matray Ecosystem
 
 **Common build standards and EditorConfig for the Matray .NET Ecosystem**
