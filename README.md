@@ -319,6 +319,14 @@ To test the standards without affecting existing projects:
 
 <!-- portfolio-techstack:end -->
 
+<!-- portfolio-roadmap:start -->
+
+## Roadmap
+
+Planned work and known limitations are tracked in the [open issues](https://github.com/phmatray/dotnet-standards/issues). Contributions toward them are welcome.
+
+<!-- portfolio-roadmap:end -->
+
 ## 🤝 Contributing
 
 Standards evolve! If you find improvements or issues:
