@@ -37,6 +37,20 @@
 
 <!-- portfolio-toc:end -->
 
+<!-- portfolio-features:start -->
+
+## Features
+
+- **One set of build standards** — centralized MSBuild props/targets shared across every .NET project in the ecosystem
+- **Consistent style** — a single `.editorconfig` and StyleCop config enforced everywhere
+- **Analyzers on by default** — modern C#/.NET analyzers wired in for all consumers
+- **Reproducible builds** — deterministic builds + Source Link out of the box
+- **Automatic versioning** — MinVer-based versioning from git tags
+- **Fast adoption** — new solutions pick up the standards in minutes via the shared imports
+
+<!-- portfolio-features:end -->
+
+
 
 
 **Common build standards and EditorConfig for the Matray .NET Ecosystem**
