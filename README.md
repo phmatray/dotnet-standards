@@ -2,6 +2,21 @@
 
 # .NET Standards — Matray Ecosystem
 
+<!-- portfolio-badges:start -->
+<!-- Identity -->
+[![phmatray - dotnet-standards](https://img.shields.io/static/v1?label=phmatray&message=dotnet-standards&color=blue&logo=github)](https://github.com/phmatray/dotnet-standards)
+![Top language](https://img.shields.io/github/languages/top/phmatray/dotnet-standards)
+[![Stars](https://img.shields.io/github/stars/phmatray/dotnet-standards?style=social)](https://github.com/phmatray/dotnet-standards/stargazers)
+[![Forks](https://img.shields.io/github/forks/phmatray/dotnet-standards?style=social)](https://github.com/phmatray/dotnet-standards/network/members)
+[![License](https://img.shields.io/github/license/phmatray/dotnet-standards)](https://github.com/phmatray/dotnet-standards/blob/HEAD/LICENSE)
+
+<!-- Activity -->
+[![Issues](https://img.shields.io/github/issues/phmatray/dotnet-standards)](https://github.com/phmatray/dotnet-standards/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/phmatray/dotnet-standards)](https://github.com/phmatray/dotnet-standards/pulls)
+[![Last commit](https://img.shields.io/github/last-commit/phmatray/dotnet-standards)](https://github.com/phmatray/dotnet-standards/commits)
+<!-- portfolio-badges:end -->
+
+
 **Common build standards and EditorConfig for the Matray .NET Ecosystem**
 
 This repository provides centralized build standards, coding conventions, and configurations for all .NET projects in the Matray ecosystem (250+ repositories).
