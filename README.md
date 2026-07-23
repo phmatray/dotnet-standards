@@ -289,6 +289,14 @@ To test the standards without affecting existing projects:
 - [Source Link](https://github.com/dotnet/sourcelink)
 - [MSBuild Common Properties](https://learn.microsoft.com/en-us/visualstudio/msbuild/common-msbuild-project-properties)
 
+<!-- portfolio-techstack:start -->
+
+## Tech Stack
+
+- **.NET 8**
+
+<!-- portfolio-techstack:end -->
+
 ## 🤝 Contributing
 
 Standards evolve! If you find improvements or issues:
